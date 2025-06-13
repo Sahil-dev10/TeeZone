@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TeesZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: #ff4c4c;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #e63b3b;
+    }
+
+    .products {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      background: #fff;
+    }
+
+    .product-card {
+      background: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #555;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      background: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TeesZone</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Stylish T-Shirts</h2>
+    <p>Trendy, Comfortable & Affordable</p>
+    <button>Shop Now</button>
+  </section>
+
+  <h2 style="text-align:center; font-size:32px; margin-top:40px; color:#222;" >NEW SHOP</h2>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg/v1/fill/w_480,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg" alt="T-Shirt 1">
+      <h3>Classic White Tee</h3>
+      <p>₹499</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 2">
+      <h3>Street Black Tee</h3>
+      <p>₹699</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ce32dd298b274ba280efa267e075be21~mv2.jpg" alt="T-Shirt 3">
+      <h3>Bold Graphic Tee</h3>
+      <p>₹599</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 4">
+      <h3>Classic Blue Tee</h3>
+      <p>₹399</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 4">
+      <h3>Classic Blue Tee</h3>
+      <p>₹399</p>
+    </div> 
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 4">
+      <h3>Classic Blue Tee</h3>
+      <p>₹399</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 4">
+      <h3>Classic Blue Tee</h3>
+      <p>₹399</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt 4">
+      <h3>Classic Blue Tee</h3>
+      <p>₹399</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 TeesZone. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
