@@ -28,6 +28,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0px;
     }
 
     header h1 
@@ -129,7 +131,15 @@
       background: #e63b3b;
     }
 
-    .products 
+    #product
+    {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      background: #fff;
+    }
+    .products
     {
       padding: 60px 40px;
       display: grid;
@@ -217,7 +227,7 @@
     <h1>TeesZone</h1>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Shop</a>
+      <a href="#product">Shop</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
@@ -253,7 +263,7 @@
 
   <h2 style="text-align:center; font-size:32px; margin-top:40px; color:#222;" >T-Shirt Collection</h2>
 
-  <section class="products">
+  <section id="product">
     <div class="product-card">
       <img src="https://static.wixstatic.com/media/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg/v1/fill/w_480,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f8d49ec34c8a4f95890362cc7a53f89b~mv2.jpg" alt="T-Shirt 1">
       <h3>Classic White Tee</h3>
