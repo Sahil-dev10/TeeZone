@@ -1,11 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: black;
+      margin-left: 0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: blueviolet;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+    }
+
+    .left-column {
+      width: 40%;
+      padding: 20px;
+    }
+
+    .main-image {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .side-images {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .side-images img {
+      width: 50px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .right-column {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: green;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: grey;
+      margin-left: 10px;
+    }
+
+    .discount {
+      color: green;
+      margin-left: 10px;
+    }
+
+    .rating {
+      background: green;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .color-options img {
+      width: 40px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .size-buttons button {
+      padding: 8px 16px;
+      margin: 5px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .add-to-cart {
+      background-color: orange;
+      color: white;
+    }
+
+    .buy-now {
+      background-color: orangered;
+      color: white;
+    }
+  </style>
 </head>
 <body>
+
+  <header>
+    <h1>TeesZone</h1>
+  </header>
+
+  <nav>
+    <a href="shop.html">Back </a>
+  </nav>
+
+  <div class="container">
+    <div class="left-column">
+      <img class="main-image" src="https://static.wixstatic.com/media/c837a6_8ea5cc0a06664ef6a3c1cf64e1cb5a27~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="T-Shirt Back View">
+      <div class="side-images">
+        <img src="https://static.wixstatic.com/media/c837a6_0ab9ff5bbc6f41a5b2dffae389cfb2b7~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Thumb 1">
+        <img src="https://static.wixstatic.com/media/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg/v1/fill/w_480,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_fd300737ecf3406b83fd9be5d67463e4~mv2.jpg" alt="Thumb 2">
+        <img src="https://static.wixstatic.com/media/c837a6_2308b08ad22c4e4aa919906536a1b5d1~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Thumb 3">
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="product-title">TRIPR Men Solid Mandarin Collar Cotton Blend White Orange and Green T-Shirt</div>
+      <div class="price">₹247 <span class="old-price">₹699</span> <span class="discount">86% off</span></div>
+      <div class="rating">3.8 ★</div>
+      <p>40,738 ratings and 2,451 reviews</p>
+
+      <h4>Color</h4>
+      <div class="color-options">
+        <img src="https://wallpapers.com/images/hd/pure-black-background-wcs86b1g1awsprv8.jpg" alt="Color 1">
+        <img src="https://wallpapers.com/images/hd/stunning-dark-maroon-c142m5xq8vv7gf9y.jpg" alt="Color 2">
+      </div>
+
+      <h4>Size</h4>
+      <div class="size-buttons">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+        <button>XXL</button>
+      </div>
+
+      <div class="buttons">
+        <button class="add-to-cart">ADD TO CART</button>
+        <button class="buy-now">BUY NOW</button>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
